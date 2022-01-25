@@ -1,0 +1,29 @@
+<form action="">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Operando A</label>
+    <input
+      type="number"
+      class="form-control"
+      id="a"
+      name="a"
+      placeholder="Ingrese operando A"
+      [(ngModel)]="aInput"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Operando B</label>
+    <input
+      type="number"
+      class="form-control"
+      id="b"
+      name="b"
+      placeholder="Ingrese operando B"
+      [(ngModel)]="bInput"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="sumar()">Sumar</button>
+  <button type="submit" class="btn btn-primary" (click)="restar()">Restar</button>
+  <button type="submit" class="btn btn-primary" (click)="multiplicar()">Multiplicar</button>
+  <button type="submit" class="btn btn-primary" (click)="dividir()">Dividir</button>
+</form>
+

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calculadora-app';
+  resultado:number ;
+  error:string;
+  mostrarResultado(resultado:number){
+    this.resultado = resultado;
+  }
+  mostrarError(error:string){
+    this.error = error;
+  }
 }
